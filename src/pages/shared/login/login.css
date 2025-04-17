@@ -1,0 +1,77 @@
+
+.login-form{
+    width: 470px;
+}
+
+.title {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60.51px;
+    letter-spacing: 1%;
+    padding-bottom: 44px;
+    padding-top: 50px;
+    padding-left: 180px;
+}
+
+.login-form-item .ant-form-item-label > label {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.05px;
+    letter-spacing: 1%;
+    padding-bottom: 10px;
+}
+
+.login-form-item .ant-form-item-label {
+    margin-bottom: 14px; 
+}
+
+.login-input {
+    padding: 20px 20px 20px 27px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 0 10px rgba(247, 2, 2, 0.3);
+}
+
+.login-input:hover {
+    padding: 20px 20px 20px 27px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 0 10px rgba(137, 1, 1, 0.3);
+}
+
+
+.login-input .ant-input-prefix {
+    margin-right: 15px; 
+}
+
+.login-input:focus,
+.login-input:focus-visible,
+.login-input:focus-within {
+  outline: none !important;
+  box-shadow: 0 0 5px red;
+  border: none !important;
+}
+
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30.26px;
+    letter-spacing: 1%;
+    padding: 35px 75px;
+    border-radius: 300px;
+    background-color: rgb(255, 54, 54);
+    color: black;
+    margin-top: 20px;
+}
+
+.login-btn:hover {
+    background-color: rgb(147, 4, 4) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
