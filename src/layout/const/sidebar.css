@@ -1,0 +1,136 @@
+
+.side-body {
+    display: flex;
+}
+ 
+.side-aside {
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(245, 19, 19, 0.79);
+    padding: 22px 20px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between; 
+}
+
+.aside-title {
+    width: 135px;
+    padding-bottom: 10px;
+    color: white;
+    padding-left: 3px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 24.2px;
+    letter-spacing: 1%;
+    text-align: center;
+}
+
+.aside-classes {
+    background-color: #006FFD;
+    padding-top: 17px;
+    border: none !important;
+}
+
+.aside-class {
+    display: flex !important;
+    justify-content: start !important;
+    align-items: center !important;
+    color: white !important;
+    width: 100% !important; 
+    height: 60px !important;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.aside-class:hover {
+    color: black !important;
+    background-color: white !important;
+    border-radius: 10px;
+}
+
+.aside-class.ant-menu-item-selected {
+    color: black !important;
+    background-color: white !important;
+}
+
+.side-right {
+    width: 100%;
+}
+
+.side-header {
+    display: flex;
+    height: 108px;
+    left: 259px;
+    background-color: white;
+    padding: 29px 25px 29px 35px;
+    box-shadow: 0px 8px 30px 0px #00000024;
+    justify-content: space-between;
+}
+
+.header-right {
+    display: flex;
+}
+
+.header-btn {
+    width: 210px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #006FFD;
+}
+
+.side-function {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.side-icon {
+    border: none;
+}
+
+.aside-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-btn {
+    padding: 20px 20px;
+    border-radius: 15px;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: white;
+    color: rgb(245, 58, 58);
+}
+
+.logout-btn {
+    width: 100%;
+    background-color: #ffffff;
+    color: rgb(245, 58, 58);
+    padding: 20px 20px;
+    border-radius: 15px;
+    bottom: 20px;
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.logout-btn:hover {
+    border: none !important;
+    color: rgb(245, 58, 58) !important;
+    padding: 20px 20px;
+}
+  
+
+
+
