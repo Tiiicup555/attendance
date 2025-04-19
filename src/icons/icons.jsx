@@ -105,7 +105,7 @@ export const ArrowLeft = () => (
         xmlns="http://www.w3.org/2000/svg">
         <path 
             d="M10.6663 19L3.99963 12M3.99963 12L10.6663 5M3.99963 12L19.9996 12" 
-            stroke="#006FFD" 
+            stroke="red" 
             stroke-width="2" 
             stroke-linecap="round" 
             stroke-linejoin="round"
