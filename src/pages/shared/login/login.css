@@ -11,7 +11,13 @@
     letter-spacing: 1%;
     padding-bottom: 44px;
     padding-top: 50px;
-    padding-left: 180px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-form-item .ant-form-item-label > label {
@@ -74,4 +80,105 @@
     background-color: rgb(147, 4, 4) !important;
     color: rgb(255, 255, 255) !important;
 }
+
+
+
+.img-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 94px 0 63px;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+  
+.circle-red-top-right {
+    width: 800px;
+    height: 800px;
+    background-color: rgba(247, 2, 2, 0.3);
+    top: -300px;
+    right: -150px;
+    z-index: 1;
+}
+  
+.circle-white-overlap {
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    top: 200px;
+    right: -200px;
+    z-index: -1;
+}
+  
+.circle-white-bottom-left {
+    width: 900px;
+    height: 900px;
+    background-color: white;
+    bottom: -300px;
+    left: -200px;
+    z-index: -2;
+}
+
+.img-container::before {
+    width: 22px; 
+    height: 22px;
+    top: 139px;
+    left: 53px;
+}
+
+.img-container::after {
+    width: 44px; 
+    height: 44px;
+    top: 64px;
+    left: 75px;
+}
+
+.img-content {
+    display: flex;
+    justify-content: center;
+    padding: 0 94px 0 63px;
+    height: 100vh;
+}
+
+.circle-background::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../../../public/assets/nomadlogo.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 40px;
+    width: 500px;
+    height: 500px;
+}
+  
+.circle-background span {
+    position: absolute;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #005FFD;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+
+.container {
+    padding: 61px 0 0 63px;
+}
+
+.title-1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: rgb(153, 0, 0);
+  }
+
+  
+  
+
+  
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Form, Input } from 'antd';
-import { Layout } from '../../../layout/layout';
 import { ArrowRight, KeyPassword, UserProfile } from '../../../icons/icons';
 
 const LoginAntd = () => {
@@ -70,11 +69,19 @@ const LoginAntd = () => {
 
 export const LoginPage = () => {
   return (
-    <Layout>
-      <div className="left">
-        <h1 className="title">Вход</h1>
-        <LoginAntd />
-      </div>
-    </Layout>
+    <div>
+        <div className="container">
+          <p className="title-1">NOMAD</p>
+        </div>
+        <div className="left">
+            <h1 className="title">Вход</h1>
+            <LoginAntd />
+        </div>
+        <div className="circle-background">
+            <div className="circle circle-red-top-right"></div>
+            <div className="circle circle-white-overlap"></div>
+            <div className="circle circle-white-bottom-left"></div>
+        </div>
+    </div>
   );
 };
