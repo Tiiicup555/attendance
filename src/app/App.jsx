@@ -3,17 +3,17 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { HomePage } from '../pages/shared/home/HomePage';
 import { LoginPage } from '../pages/shared/login/LoginPage';
-
-
+import { Layout } from '../layout/layout'; 
+import SchedulePage from '../pages/shared/schedule/SchedulePage';
 
 export default function App() {
   return (
-      <Routes>
-        <Route path='/home' element={<HomePage/>} />
-        <Route path='/login' element={<LoginPage/>} />
-        
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route path="home" element={<HomePage />} />
+        <Route path="login" element={<LoginPage />} />
+        <Route path="schedule" element={<SchedulePage />} />
+      </Route>
+    </Routes>
   );
 }
-
-

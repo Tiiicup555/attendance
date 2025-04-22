@@ -1,11 +1,12 @@
+// src/api/axiosInstance.js
 import axios from 'axios';
 
-export const Api = 'api';
+export const Api = 'http://127.0.0.1:8000/api/';
 
 export const axiosInstance = axios.create({
   baseURL: Api,
   headers: {
-    'Content-type': 'application/json',
+    'Content-Type': 'application/json',
   },
 });
 
