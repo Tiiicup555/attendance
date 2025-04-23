@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Button } from "antd";
 import { ArrowLeft } from "../../icons/icons";
 
+
 export const Sidebar = ({ children }) => { 
   const [username, setUsername] = useState("...");
 
@@ -31,10 +32,11 @@ export const Sidebar = ({ children }) => {
         <nav className="aside-nav">
           <h1 className="aside-title">NOMAD</h1>
           <hr />
-          <Link to="/" className="nav-btn">{username}</Link>
+          <div className="nav-username">{username}</div>
           <Link to="/" className="nav-btn">Расписание</Link>
-          <Link to="/" className="nav-btn">Группы</Link>
+          <Link to="/groups" className="nav-btn">Группы</Link>
         </nav>
+        <div className="aside-background"></div>
         <div>
           <Button className="logout-btn" onClick={handleLogout}> 
               <ArrowLeft/>

@@ -73,7 +73,7 @@ export const LoginPage = () => {
         <div className="container">
           <p className="title-1">NOMAD</p>
         </div>
-        <div className="left">
+        <div className="login">
             <h1 className="title">Вход</h1>
             <LoginAntd />
         </div>
