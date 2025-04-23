@@ -1,4 +1,5 @@
 import { Table, Tag, Card } from 'antd';
+import { Layout } from '../../../layout/layout';
 
 const scheduleData = [
   {
@@ -25,7 +26,6 @@ const scheduleData = [
     teacher: 'Сидоров А.А.',
     room: '105',
   },
-  // добавь больше строк по желанию
 ];
 
 const columns = [
@@ -59,6 +59,7 @@ const columns = [
 
 export default function SchedulePage() {
   return (
+    <Layout>
     <div className="p-6">
       <Card title="Расписание занятий" bordered={false}>
         <Table
@@ -68,5 +69,6 @@ export default function SchedulePage() {
         />
       </Card>
     </div>
+    </Layout>
   );
 }

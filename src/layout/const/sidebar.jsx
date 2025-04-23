@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Button } from "antd";
 import { ArrowLeft } from "../../icons/icons";
 
-export const Sidebar = () => { 
+export const Sidebar = ({children}) => { 
   const [username, setUsername] = useState("...");
 
   useEffect(() => {
@@ -42,6 +42,7 @@ export const Sidebar = () => {
           </Button>
         </div>
       </aside>
+      <div className="side-right">{children}</div>
     </div>
   );
 };
