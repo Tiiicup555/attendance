@@ -1,0 +1,22 @@
+.left {
+    height: 100vh;
+    display: flex;
+}
+
+
+.group-modalCard {
+    margin: 30px 30px !important;
+}
+
+.group-createBtn {
+    font-size: 15px;
+    line-height: 30.26px;
+    letter-spacing: 1%;
+    background-color: rgba(255, 54, 54, 0.745);
+    color: black;
+}
+
+.group-createBtn:hover {
+    background-color: rgba(223, 14, 14, 0.773) !important;
+    color: rgb(255, 255, 255) !important;
+}

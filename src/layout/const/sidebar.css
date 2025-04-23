@@ -14,10 +14,8 @@
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-between; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    position: relative;
+    overflow: hidden; 
 }
 
 .aside-title {
@@ -47,6 +45,16 @@ hr {
     color: white;
     transition: background-color 0.3s ease, color 0.3s ease; 
     cursor: pointer;
+    z-index: 1;
+}
+
+.nav-username {
+    padding: 20px 20px;
+    border-radius: 15px;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    cursor: pointer;
+    z-index: 1;
 }
 
 .nav-btn:hover {
@@ -71,13 +79,36 @@ hr {
     color: rgb(245, 58, 58) !important;
     padding: 20px 20px;
 }
+
+.aside-background::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../../public/assets/nomadlogo.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 100px;
+    left: -140px;
+    width: 350px;
+    height: 350px;
+    z-index: 0;
+}
+
+.aside-background::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../../public/assets/nomadlogo.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 100px;
+    left: 10px;
+    width: 350px;
+    height: 350px;
+    z-index: 0;
+}
  
 .side-right {
-    margin-left: 250px; /* Сдвигаем контент вправо, чтобы он не перекрывался сайдбаром */
-    width: 100%; /* Занимает оставшееся пространство */
-    overflow-y: auto; /* Разрешаем прокрутку контента */
-    padding: 20px;
-  }
+    width: 100%; 
+ }
 
 
 
